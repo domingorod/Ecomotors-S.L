@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distintivo Ambiental - Ecomotors S.L</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo-container h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-bottom: 2rem;
+            border-radius: 10px;
+        }
+        
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+        
+        .details h2 {
+            color: #2ecc71;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .details p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            font-size: 1.05rem;
+        }
+        
+        .features {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+        
+        .features h3 {
+            color: #2ecc71;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .features ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .features li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        
+        .features li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #2ecc71;
+            font-weight: bold;
+        }
+        
+        .sidebar {
+            background: #f9f9f9;
+            padding: 2rem;
+            border-radius: 10px;
+            height: fit-content;
+        }
+        
+        .price-box {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .price {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #2ecc71;
+            margin: 1rem 0;
+        }
+        
+        .cta-button {
+            background: #2ecc71;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        
+        .cta-button:hover {
+            background: #27ae60;
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.7rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+        
+        .form-group textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #2ecc71;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <h1>🌱 Ecomotors S.L</h1>
+            </div>
+            <a href="index.html">← Volver al inicio</a>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <a href="index.html" class="back-link">← Volver a Servicios</a>
+        
+        <div class="hero">
+            <h1>🏷️ Distintivo Ambiental</h1>
+            <p>Asesoría y tramitación para vehículos comprometidos con el planeta</p>
+        </div>
+        
+        <div class="content">
+            <div class="details">
+                <h2>Descripción del Servicio</h2>
+                <p>
+                    El Distintivo Ambiental es una etiqueta identificativa obligatoria en algunos territorios españoles. 
+                    En Ecomotors S.L te asesoramos sobre qué tipo de distintivo necesita tu vehículo y realizamos toda la 
+                    tramitación necesaria de forma rápida y eficiente.
+                </p>
+                <p>
+                    Disponemos de los distintivos 0 (cero emisiones), ECO y C, según las características medioambientales 
+                    de tu vehículo. Te ayudaremos a identificar cuál corresponde a tu automóvil y gestionaremos toda la 
+                    documentación.
+                </p>
+                
+                <div class="features">
+                    <h3>Tipos de Distintivos</h3>
+                    <ul>
+                        <li><strong>Distintivo 0:</strong> Vehículos de cero emisiones (eléctricos, hidrógeno)</li>
+                        <li><strong>Distintivo ECO:</strong> Híbridos enchufables y automóviles con emisiones muy bajas</li>
+                        <li><strong>Distintivo C:</strong> Gasolina Euro 5 y Euro 6, Diésel Euro 5 y Euro 6</li>
+                        <li>Asesoramiento personalizado según tu vehículo</li>
+                        <li>Tramitación completamente online</li>
+                        <li>Entrega en 24-48 horas</li>
+                        <li>Garantía de autenticidad</li>
+                    </ul>
+                </div>
+                
+                <h2>Ventajas del Distintivo Ambiental</h2>
+                <p>
+                    Contar con el Distintivo Ambiental correcto es fundamental para:
+                </p>
+                <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                    <li>Circular sin restricciones en zonas de tráfico limitado</li>
+                    <li>Acceder a estacionamientos prioritarios ecológicos</li>
+                    <li>Beneficiarse de promociones y descuentos en algunas ciudades</li>
+                    <li>Demostrar el compromiso ambiental de tu vehículo</li>
+                </ul>
+                
+                <h2>Proceso de Solicitud</h2>
+                <p>
+                    <strong>1. Consulta inicial:</strong> Comprobamos los datos de tu vehículo.<br>
+                    <strong>2. Identificación del distintivo:</strong> Determinamos qué tipo corresponde.<br>
+                    <strong>3. Tramitación:</strong> Realizamos toda la gestión administrativa.<br>
+                    <strong>4. Entrega:</strong> Recibirás el distintivo en tu domicilio.
+                </p>
+            </div>
+            
+            <div class="sidebar">
+                <div class="price-box">
+                    <p>Precio base</p>
+                    <div class="price">Desde 25€</div>
+                    <small>*Precio variable según tipo de distintivo</small>
+                </div>
+                
+                <form id="contactForm">
+                    <h3 style="color: #2ecc71; margin-bottom: 1rem;">Solicitar Distintivo</h3>
+                    
+                    <div class="form-group">
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Teléfono</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="vehicle">Modelo y Matrícula del Vehículo</label>
+                        <input type="text" id="vehicle" name="vehicle" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Mensaje</label>
+                        <textarea id="message" name="message" placeholder="Cuéntanos sobre tu vehículo..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button">Solicitar Distintivo</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Ecomotors S.L - Todos los derechos reservados.</p>
+        <p>Cuidamos tu coche, cuidamos el planeta 🌱</p>
+    </footer>
+    
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por tu interés! Nos pondremos en contacto pronto.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>

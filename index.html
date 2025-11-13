@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecomotors S.L - Taller Ecológico</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 2rem;
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo-container h1 {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+        
+        nav a:hover {
+            opacity: 0.8;
+        }
+        
+        .hero {
+            background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .about-section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin: 3rem 0;
+            background: #f9f9f9;
+            padding: 3rem;
+            border-radius: 10px;
+        }
+        
+        .about-logo {
+            text-align: center;
+        }
+        
+        .about-logo img {
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .about-content h3 {
+            font-size: 2rem;
+            color: #2ecc71;
+            margin-bottom: 1rem;
+        }
+        
+        .about-content p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            text-align: justify;
+            color: #555;
+        }
+        
+        .tagline {
+            font-size: 1.4rem;
+            font-weight: bold;
+            color: #27ae60;
+            text-align: center;
+            margin: 2rem 0;
+            padding: 2rem;
+            background: linear-gradient(135deg, #e8f8f5 0%, #d5f4e6 100%);
+            border-left: 5px solid #2ecc71;
+            border-radius: 5px;
+        }
+        
+        .services {
+            margin: 3rem 0;
+        }
+        
+        .services h3 {
+            font-size: 2rem;
+            color: #2ecc71;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .service-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .service-price {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #2ecc71;
+            margin: 1rem 0;
+        }
+        
+        .service-card h4 {
+            color: #2ecc71;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .about-section {
+                grid-template-columns: 1fr;
+            }
+            
+            nav {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .hero h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER Y NAVEGACIÓN -->
+    <header>
+        <nav>
+            <div class="logo-container">
+                <h1>🌱 Ecomotors S.L</h1>
+            </div>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#nosotros">Sobre Nosotros</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- SECCIÓN HERO -->
+    <section class="hero" id="inicio">
+        <h2>Bienvenido a Ecomotors S.L</h2>
+        <p>Tu taller de confianza para el cuidado del medio ambiente</p>
+    </section>
+    
+    <!-- SECCIÓN SOBRE NOSOTROS -->
+    <section id="nosotros">
+        <div class="container">
+            <div class="about-section">
+                <div class="about-logo">
+                    <img src="logo-ecomotors.png" alt="Logo Ecomotors S.L">
+                </div>
+                <div class="about-content">
+                    <h3>Sobre Nosotros</h3>
+                    <p>
+                        En Ecomotors S.L nos comprometemos con la excelencia en el mantenimiento y reparación de vehículos, 
+                        siempre priorizando la sostenibilidad y el respeto por el medio ambiente. Nuestro equipo de profesionales 
+                        altamente capacitados trabaja para ofrecerte servicios de calidad que no solo cuidan tu vehículo, 
+                        sino también nuestro planeta.
+                    </p>
+                    <p>
+                        Con más de años de experiencia, hemos ganado la confianza de miles de clientes que comparten nuestra visión 
+                        de un futuro más verde y sostenible. En cada reparación y mantenimiento, aplicamos las mejores prácticas 
+                        ecológicas y utilizamos materiales y productos respetuosos con el ambiente.
+                    </p>
+                </div>
+            </div>
+            
+            <!-- ESLOGAN DESTACADO -->
+            <div class="tagline">
+                💚 "Cuidamos tu coche, cuidamos el planeta" 💚
+            </div>
+        </div>
+    </section>
+    
+    <!-- SECCIÓN SERVICIOS -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <h3>Nuestros Servicios</h3>
+            <div class="service-cards">
+                <a href="cambio-motor.html" class="service-card">
+                    <h4>🔧 Cambio de Motor</h4>
+                    <p>Servicio especializado de cambio de motor con garantía de calidad y eficiencia energética.</p>
+                    <div class="service-price">Desde 800€</div>
+                </a>
+                <a href="neumaticos.html" class="service-card">
+                    <h4>🛞 Neumáticos</h4>
+                    <p>Venta, cambio y reparación de neumáticos de las mejores marcas con opciones ecológicas.</p>
+                    <div class="service-price">Desde 150€</div>
+                </a>
+                <a href="distintivo-ambiental.html" class="service-card">
+                    <h4>🏷️ Distintivo Ambiental</h4>
+                    <p>Asesoría y tramitación del distintivo ambiental para vehículos comprometidos con el planeta.</p>
+                    <div class="service-price">Desde 25€</div>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- FOOTER -->
+    <footer id="contacto">
+        <p>&copy; 2025 Ecomotors S.L - Todos los derechos reservados.</p>
+        <p>Cuidamos tu coche, cuidamos el planeta 🌱</p>
+    </footer>
+</body>
+</html>
